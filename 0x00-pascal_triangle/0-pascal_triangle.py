@@ -12,18 +12,18 @@ def pascal_triangle(n):
 
 
     """Let's initialize an empty resulting array """
-    triangle = [[] for idx in range(n)]
+    triangle = [[] for _ in range(n)]
 
-    for li in range(n):
-        for col in range(li+1):
-            if col < li:
+    for row_index in range(n):
+        for col in range(row_index+1):
+            if col < row_index:
                 if col == 0:
                     """ the first column is always set to 1 """
-                    triangle[li].append(1)
+                    triangle[row_index].append(1)
                 else:
-                    triangle[li].append(triangle[li-1][col] + triangle[li-1][col-1])
-            elif col == li:
+                    triangle[row_index].append(triangle[row_index-1][col] + triangle[row_index-1][col-1])
+            elif col == row_index:
                 """ the diagonal is always set to 1 """
-                triangle[li].append(1)
+                triangle[row_index].append(1)
 
     return triangle
