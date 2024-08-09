@@ -21,7 +21,8 @@ def pascal_triangle(n):
                     """ the first column is always set to 1 """
                     triangle[row_index].append(1)
                 else:
-                    triangle[row_index].append(triangle[row_index-1][col] + triangle[row_index-1][col-1])
+                    triangle[row_index].append(
+                        triangle[row_index-1][col] + triangle[row_index-1][col-1])
             elif col == row_index:
                 """ the diagonal is always set to 1 """
                 triangle[row_index].append(1)
