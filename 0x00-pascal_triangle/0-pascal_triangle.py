@@ -2,18 +2,18 @@
 """Pascal triangle"""
 
 
-def pascal_triangle(n):
+def pascal_triangle(num_rows):
     """Returns a list of lists of integers
     representing the Pascal’s triangle of n:
     """
 
-    if n <= 0:
+    if num_rows <= 0:
         return []
 
 
-    triangle = [[] for _ in range(n)]
+    triangle = [[] for _ in range(num_rows)]
 
-    for row_index in range(n):
+    for row_index in range(num_rows):
         for col in range(row_index+1):
             if col < row_index:
                 if col == 0:
