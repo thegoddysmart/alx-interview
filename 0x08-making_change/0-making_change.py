@@ -7,12 +7,12 @@
         coins (list): A list of the values of the coins
         in your possession.
         total (int): The target total amount.
-    
+
     Returns:
         int: The fewest number of coins needed to meet
         the total.
-             Returns -1 if the total cannot be met with
-             the given coins.
+            Returns -1 if the total cannot be met with
+            the given coins.
     """
 
 
