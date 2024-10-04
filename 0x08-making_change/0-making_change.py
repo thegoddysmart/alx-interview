@@ -2,7 +2,7 @@
 """
     Determines the fewest number of coins needed to meet
     a given amount total.
-    
+
     Args:
         coins (list): A list of the values of the coins
         in your possession.
